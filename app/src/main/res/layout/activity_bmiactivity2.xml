@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CD3C6"
+    tools:context=".BMIactivity2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/blackash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/weightTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="36dp"
+                android:text="Weight"
+                android:textColor="#D3D0BA"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/weightEt"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="0"
+                android:textColorHint="#EBECF3"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/weightTxt"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/weightTxt"
+                app:layout_constraintTop_toBottomOf="@+id/weightTxt"
+                app:layout_constraintVertical_bias="0.451" />
+
+            <TextView
+                android:id="@+id/kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kg"
+                android:textColor="#E0E2EC"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/weightEt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.324"
+                app:layout_constraintStart_toEndOf="@+id/weightEt"
+                app:layout_constraintTop_toTopOf="@+id/weightEt"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/blackash"
+        app:layout_constraintEnd_toEndOf="@+id/card1"
+        app:layout_constraintStart_toStartOf="@+id/card1"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/heightTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Height"
+                android:textColor="#D3D0BA"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.238"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/heightEt"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="0"
+                android:inputType="number"
+                android:textColorHint="#EBECF3"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/heightTxt"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/heightTxt"
+                app:layout_constraintTop_toBottomOf="@+id/heightTxt"
+                app:layout_constraintVertical_bias="0.725" />
+
+            <TextView
+                android:id="@+id/cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cm"
+                android:textColor="#E0E2EC"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/heightEt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/heightEt"
+                app:layout_constraintTop_toTopOf="@+id/heightEt"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/calBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blackash"
+        android:text="CALCULATE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card2"
+        app:layout_constraintStart_toStartOf="@+id/card2"
+        app:layout_constraintTop_toBottomOf="@+id/card2" />
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/card3"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+
+        app:cardBackgroundColor="@color/blackash"
+        app:layout_constraintEnd_toEndOf="@+id/calBtn"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="@+id/calBtn"
+        app:layout_constraintTop_toBottomOf="@+id/calBtn" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/CountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Count"
+                android:textColor="#E6E9F8"
+                android:textSize="39sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Result"
+                android:textColor="#DDE1F4"
+                android:textSize="33dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/CountTxt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/CountTxt"
+                app:layout_constraintTop_toBottomOf="@+id/CountTxt"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Range"
+                android:textColor="#D1D5E8"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/result"
+                app:layout_constraintStart_toStartOf="@+id/result"
+                app:layout_constraintTop_toBottomOf="@+id/result" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
